@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navlist li {
+    list-style: none;
+
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.left_container,
+.right_container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_container {
+    background: #262525;
+    width: 75%;
+    padding-left: 3rem;
+}
+
+.right_container {
+    background: linear-gradient(-45deg, #5DB9EE, #262525 70%);
+    width: 25%;
+}
+
+.icons .fa-brands {
+    color: #bbb;
+    font-size: 1.3rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: -12rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    margin-left: 4rem;
+
+}
+
+.content .intro {
+    font-size: 1.9rem;
+    color: #fff;
+}
+
+.content .intro span {
+    font-size: 39px;
+    color: rgb(23, 200, 240);
+
+}
+
+.content h1 {
+    font-size: 3.9rem;
+    color: rgb(23, 200, 240);
+}
+
+.content .detail {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 40rem;
+    margin: 1.1rem 0rem 3rem 0;
+    line-height: 2rem;
+}
+
+.btn_container button {
+    border: 2.9px solid black;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+
+button:nth-child(1) {
+    background: #5DB9EE;
+    color: #262525;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: #5DB9EE;
+    margin-left: 2rem;
+}
+
+button:nth-child(1):hover {
+    background: transparent;
+    color: #5DB9EE;
+}
+
+button:nth-child(2):hover {
+    background: #5DB9EE;
+    color: #262525;
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #5DB9EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent, #262525 50%);
+    width: 30rem;
+}
+
+.circle:nth-child(2) {
+    background-image: url("prem.png.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25rem;
+    border: 8px solid white;
+    box-shadow: 0 0 1rem #9e4444,
+    inset 0 0 1rem #9e4444,
+    0 0 2rem #345c74,
+    inset 0 0 2rem #5b7280,
+    0 0 4rem #5DB9EE,
+    inset 0 0 4rem #232f35
+    ;
+
+}
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom:-5px;
+    transform: scalex(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after{
+    transform: scalex(1);
+    transform-origin: bottom left;
+}
+.icons a {
+    pointer-events: auto;
+    text-decoration: none;
+}
+.html {
+    scroll-behavior: smooth;
+}
+.hireme-section {
+    min-height: 100vh;
+    background: #1a1a1a;
+    color: white;
+    padding: 50px;
+}
+
+.hireme-section h2 {
+    font-size: 2.5rem;
+    color: #5DB9EE;
+    margin-bottom: 20px;
+}
+
+.hireme-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.hireme-section ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.hireme-section ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+.projects-section {
+    min-height: 100vh;
+    background: #111;
+    color: white;
+    padding: 50px;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    color: #5DB9EE;
+    margin-bottom: 30px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #5DB9EE;
+}
+
+.project-card h3 {
+    color: #5DB9EE;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
