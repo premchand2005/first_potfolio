@@ -152,7 +152,7 @@ button:nth-child(2):hover {
 }
 
 .circle:nth-child(2) {
-    background-image: url("prem.png.jpg");
+    background-image: url("Prem.png.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 25rem;
